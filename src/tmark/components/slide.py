@@ -3,10 +3,11 @@ from typing import ClassVar, override
 from rich.align import Align
 from rich.columns import Columns
 from rich.console import RenderableType
-from rich.panel import Panel
 from rich.style import Style
 from rich.table import Table
 from rich.text import Text
+from sympy.parsing.latex import parse_latex
+from sympy.printing import pretty
 from textual import highlight
 from textual.app import ComposeResult, RenderResult
 from textual.widget import Widget
@@ -94,6 +95,9 @@ class MarkdownContainerBlock(MarkdownBlock):
 
                 case "table":
                     yield MarkdownTable(block)
+
+                case "block_math":
+                    yield MarkdownMath(block)
 
                 case _:
                     continue
@@ -199,6 +203,10 @@ class MarkdownLeafBlock(MarkdownBlock):
 
                     # Clear accumulator
                     accumulator = Text()
+
+                # inline_math
+                case "inline_math":
+                    accumulator = accumulator.append(inline.raw, style)
 
                 case _:
                     return
@@ -461,6 +469,21 @@ class MarkdownTable(MarkdownLeafBlock):
             renderable=self.render_inlines(cell.children),
             align=cell.attrs.get("align") or "left",  # pyright: ignore[reportArgumentType]
         )
+
+
+# Markdown math
+class MarkdownMath(MarkdownLeafBlock):
+    # CSS
+    DEFAULT_CSS: ClassVar[str] = """
+    MarkdownMath {
+      content-align: center middle;
+    }
+    """
+
+    # render
+    @override
+    def render(self) -> RenderResult:
+        return pretty(parse_latex(self.token.raw))  # pyright: ignore[reportUnknownVariableType]
 
 
 # Markdown slide

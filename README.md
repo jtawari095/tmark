@@ -13,6 +13,7 @@ You can look at example presentations in the [examples directories](/examples).
 - ✍️ Presentation can contain one or more slides in a single markdown file spearated by thematic breaks.
 - 🖼️ Images are supported on some terminals (like `kitty` and `wezterm`).
 - 🎨 Code highlighting support for a wide list of programming languages.
+- 🔢 Supports block LaTeX Math (except for inline math).
 
 ## Usage 💻
 
