@@ -124,9 +124,15 @@ Unordered list can use:
 
 as the bullet.
 
+---
+
+# Tasklists
+
 Tasklist items are also supported:
 
 - [X] Do something
+- [ ] Do something
+- [ ] Do something
 - [ ] Do some other thing
   - [X] Do something other thing part
   - [ ] Do something other thing part
