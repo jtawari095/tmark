@@ -4,9 +4,7 @@ Markdown Slideshow in Terminal.
 
 Tmark allows you to create presentations in markdown format and render them directly inside your terminal.
 
-
-https://github.com/user-attachments/assets/3877394f-8759-4a82-a1c6-f668e867c830
-
+https://github.com/user-attachments/assets/49b04047-0a32-47ff-b112-3b4a3929889f
 
 You can look at example presentations in the [examples directories](/examples).
 
