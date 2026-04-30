@@ -6,15 +6,15 @@ Tmark allows you to create presentations in markdown format and render them dire
 
 You can look at example presentations in the [examples directories](/examples).
 
-## Features
+## Features ✨
 
-- Fully complaint to CommonMark and GitHub Flavoured Markdown (GFM) spec.
-- Customizable themes.
-- Presentation can contain one or more slides in a single markdown file spearated by thematic breaks.
-- Images are supported on some terminals (like `kitty` and `wezterm`).
-- Code highlighting support for a wide list of programming languages.
+- ✅ Fully complaint to CommonMark and GitHub Flavoured Markdown (GFM) spec.
+- 🎨 Customizable themes.
+- ✍️ Presentation can contain one or more slides in a single markdown file spearated by thematic breaks.
+- 🖼️ Images are supported on some terminals (like `kitty` and `wezterm`).
+- 🎨 Code highlighting support for a wide list of programming languages.
 
-## Usage
+## Usage 💻
 
 Run the program and the pass the markdown source file:
 
