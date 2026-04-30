@@ -161,8 +161,3 @@ In mathematics, Euler's identity (also known as Euler's equation) is the equalit
 $$
 e^{i\pi}+1=0
 $$
-
-where  
-    $e$ is Euler's number, the base of natural logarithms,  
-    $i$ is the imaginary unit, which by definition satisfies $i^{2}=-1$, and  
-    $\pi$ is pi, the ratio of the circumference of a circle to its diameter.

@@ -1,6 +1,32 @@
 Tmark Screen#_default {
+  padding: 2 6;
+  layout: grid;
+  grid-size: 1 2;
+  grid-rows: 1fr auto;
+  grid-gutter: 2;
+
   #content {
     height: 100%;
-    padding: 2 6;
+  }
+
+  #footer {
+    layout: grid;
+    grid-size: 4 1;
+    grid-gutter: 2;
+    grid-rows: auto;
+    grid-columns: auto auto 1fr auto;
+
+    #author {
+      color: $text-success;
+      text-style: bold;
+    }
+
+    #date {
+      color: $text-disabled;
+    }
+
+    #indicator {
+      color: $text-primary;
+    }
   }
 }
